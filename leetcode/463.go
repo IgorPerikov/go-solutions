@@ -13,10 +13,10 @@ func islandPerimeter(grid [][]int) int {
 			if grid[i][j] == 1 {
 				perimeter += 4
 				if i-1 >= 0 && grid[i-1][j] == 1 {
-					perimeter-=2
+					perimeter -= 2
 				}
 				if j-1 >= 0 && grid[i][j-1] == 1 {
-					perimeter-=2
+					perimeter -= 2
 				}
 			}
 		}
